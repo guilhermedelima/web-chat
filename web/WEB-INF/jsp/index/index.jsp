@@ -14,9 +14,9 @@
     </head>
     <body>
         <h1>WEB CHAT</h1>
-        <input id="cadastro" type="button" value="Cadastro de Usuário" onClick="document.location.href='/FrameworkDAS/cadastro'">
+        <input id="cadastro" type="button" value="Cadastro de Usuário" onClick="document.location.href='/WebChat/cadastro'">
         <br></br>
-        <input id="chat" type="button"  value="Entrar no chat"  onClick="document.location.href='/FrameworkDAS/chat/login'"/>
+        <input id="chat" type="button"  value="Entrar no chat"  onClick="document.location.href='/WebChat/chat/login'"/>
         <br></br>
         <c:if test="${errors != null}">
             <div class="error" style="color: red"> 

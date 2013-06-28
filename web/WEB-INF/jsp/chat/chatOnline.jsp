@@ -63,7 +63,7 @@
                         $.ajax({
                             type: 'post',
                             data: 'msg='+msg+'&remetente='+remetente+'&destinatario='+destinatario,
-                            url: '/FrameworkDAS/chat/ajax/atualizarChat'
+                            url: '/WebChat/chat/ajax/atualizarChat'
                         })
                     }
                 });
@@ -80,6 +80,6 @@
         <input id ="remetente" name="remetente" type="hidden" value="${loginRemetente}"/>
         <input id ="destinatario" name="destinatario" type="hidden" value="${loginDestinatario}"/>
         <br></br>
-        <input type="button" value="Sair do chat" onClick="document.location.href='/FrameworkDAS/chat/efetuarLogout'"/>
+        <input type="button" value="Sair do chat" onClick="document.location.href='/WebChat/chat/efetuarLogout'"/>
     </body>
 </html>

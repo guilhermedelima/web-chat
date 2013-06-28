@@ -16,7 +16,7 @@
             $(document).ready(function(){
                 $("#excluirCadastro").click(function(){
                     if(confirm("Você deseja mesmo excluir seu cadastro?")){
-                        $("#formulario").attr("action", "/FrameworkDAS/cadastro/excluirUsuario");
+                        $("#formulario").attr("action", "/WebChat/cadastro/excluirUsuario");
                         $("#formulario").submit();
                     }else
                         return false;
@@ -55,7 +55,7 @@
                     }
                     
                     if(confirm("Você deseja mesmo alterar seu cadastro?")){
-                        $("#formulario").attr("action", "/FrameworkDAS/cadastro/alterarUsuario");
+                        $("#formulario").attr("action", "/WebChat/cadastro/alterarUsuario");
                         $("#formulario").submit();
                     }else
                         return false;

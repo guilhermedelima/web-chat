@@ -15,10 +15,10 @@
     <body>
         <h1>Pagina de Cadastro de Usuários</h1>
         <div id ="botoes">
-            <input id="incluir" type="button" value="Fazer uma nova conta" onClick="document.location.href='/FrameworkDAS/cadastro/incluir'"/><br></br>
-            <input id="alterar" type="button" name ="operacao" value="Alterar sua conta" onClick="document.location.href='/FrameworkDAS/cadastro/autenticar?operacao=alterar'"/><br></br>
-            <input id="excluir" type="button" name ="operacao" value="Excluir sua conta" onClick="document.location.href='/FrameworkDAS/cadastro/autenticar?operacao=excluir'"/><br></br>
-            <input id="consultar" type="button" value="Visualizar Contas" onClick="document.location.href='/FrameworkDAS/cadastro/listarCadastro'"/><br></br>
+            <input id="incluir" type="button" value="Fazer uma nova conta" onClick="document.location.href='/WebChat/cadastro/incluir'"/><br></br>
+            <input id="alterar" type="button" name ="operacao" value="Alterar sua conta" onClick="document.location.href='/WebChat/cadastro/autenticar?operacao=alterar'"/><br></br>
+            <input id="excluir" type="button" name ="operacao" value="Excluir sua conta" onClick="document.location.href='/WebChat/cadastro/autenticar?operacao=excluir'"/><br></br>
+            <input id="consultar" type="button" value="Visualizar Contas" onClick="document.location.href='/WebChat/cadastro/listarCadastro'"/><br></br>
         </div>
         <c:if test="${errors != null}">
             <div class="error" style="color: red"> 

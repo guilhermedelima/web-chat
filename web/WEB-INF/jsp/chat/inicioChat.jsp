@@ -36,7 +36,7 @@
                             content += '<tr><td style=\"border: 1px solid #000;\">' +cliente.login+ '</td>';
                             content += '<td style=\"border: 1px solid #000;\">' +cliente.nome+ '</td>';
                             content += '<td style=\"border: 1px solid #000;\">' +cliente.idade+ '</td>';
-                            content += '<td style=\"border: 1px solid #000;\"> <input type=\"button\" value=\"Iniciar nova conversa\" onClick=\"document.location.href=\'/FrameworkDAS/chat/abrirChat?destinatario='+cliente.login+'\'\" /></td></tr>';
+                            content += '<td style=\"border: 1px solid #000;\"> <input type=\"button\" value=\"Iniciar nova conversa\" onClick=\"document.location.href=\'/WebChat/chat/abrirChat?destinatario='+cliente.login+'\'\" /></td></tr>';
                        }
                        
                        content += "</table>";
@@ -72,7 +72,7 @@
                            var chat = json.list[i];
                            
                             content += '<tr><td style=\"border: 1px solid #000;\">' +chat.remetente.nome+ '</td>';
-                            content += '<td style=\"border: 1px solid #000;\"> <input type=\"button\" value=\"Aceitar\" onClick=\"document.location.href=\'/FrameworkDAS/chat/aceitarChat?remetente='+chat.remetente.login+'\'\" /></td></tr>';
+                            content += '<td style=\"border: 1px solid #000;\"> <input type=\"button\" value=\"Aceitar\" onClick=\"document.location.href=\'/WebChat/chat/aceitarChat?remetente='+chat.remetente.login+'\'\" /></td></tr>';
                        }
                        
                        content += "</table>";
@@ -95,7 +95,7 @@
         </div>
         <div id="divChat" >
         </div>
-        <input type="button" value="Efetuar Logout" onClick="document.location.href='/FrameworkDAS/chat/efetuarLogout'"/>
+        <input type="button" value="Efetuar Logout" onClick="document.location.href='/WebChat/chat/efetuarLogout'"/>
         
     </body>
 </html>
