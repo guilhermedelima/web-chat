@@ -60,14 +60,15 @@ public class ControladorCadastroUsuario {
         tipoArquivo = tipoArquivo.toLowerCase();
         Usuario u;
                 
-        if(tipoArquivo.equals("txt")){
+        if(tipoArquivo.equals("txt"))
             u = txtDAO.consultarUsuario(login, senha);
-            return u;
-        }else if(tipoArquivo.equals("xml")){
+        else if(tipoArquivo.equals("xml"))
             u = xmlDAO.consultarUsuario(login, senha);
-            return u;
-        }
-        return null;
+        else
+            u = null;
+        
+        
+        return u;
     }
     
     public Usuario consultar(String login, String tipoArquivo){
@@ -75,14 +76,14 @@ public class ControladorCadastroUsuario {
         tipoArquivo = tipoArquivo.toLowerCase();
         Usuario u;
                 
-        if(tipoArquivo.equals("txt")){
+        if(tipoArquivo.equals("txt"))
             u = txtDAO.consultarUsuario(login);
-            return u;
-        }else if(tipoArquivo.equals("xml")){
+        else if(tipoArquivo.equals("xml"))
             u = xmlDAO.consultarUsuario(login);
-            return u;
-        }
-        return null;
+        else
+            u = null;
+        
+        return u;
     }
     
     public ArrayList<Usuario> consultarCadastro(String tipoArquivo){
@@ -90,13 +91,13 @@ public class ControladorCadastroUsuario {
         tipoArquivo = tipoArquivo.toLowerCase();
         ArrayList<Usuario> lista;
         
-        if(tipoArquivo.equals("txt")){
+        if(tipoArquivo.equals("txt"))
             lista = txtDAO.obterCadastro();
-            return lista;
-        }else if(tipoArquivo.equals("xml")){
+        else if(tipoArquivo.equals("xml"))
             lista = xmlDAO.obterCadastro();
-            return lista;
-        }
-        return null;
+        else
+            lista = null;
+        
+        return lista;
     }
 }
